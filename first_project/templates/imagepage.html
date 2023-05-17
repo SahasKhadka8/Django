@@ -1,0 +1,43 @@
+{% extends 'first.html' %}
+{% load static %}
+{% block title %} Image Page {% endblock %}
+{% block content %} 
+
+<h1>  Image in HTML Files  </h1><br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{% static 'right.png' %}" class="img-fluid" alt="Image of Right">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'Burger.png' %}" class="img-fluid" alt="Image of Burger">
+            <p> Burger </p>
+        </div>
+    
+        <div class="col-md-4" style="margin: 0 auto; ">
+        <img src="{% static 'hot dog.jpg' %}" class="img-fluid" alt="Image of Hot Dog"><br>
+        <label>Hot Dog</label>
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'Dal_Bhat_TarkariNepal.png' %}" class="img-fluid" alt="Image of DalBhat">
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'chowmein.jpg' %}" class="img-fluid" alt="Image of Chowmein">
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'miso ramen.png' %}" class="img-fluid" alt="Image of Miso Ramen">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'momo.jpg' %}" class="img-fluid" alt="Image of Momo">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'pizza.jpg' %}" class="img-fluid" alt="Image of Pizza">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'veg ramen.jpg' %}" class="img-fluid" alt="Image of Veg Ramen">
+        </div>
+    </div>    
+</div>
+
+{% endblock %}

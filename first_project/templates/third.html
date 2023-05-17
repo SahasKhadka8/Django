@@ -1,0 +1,23 @@
+{% extends 'first.html' %}
+{% block title %} Third page {% endblock %}
+
+{% block content %} <h1>This is my third page</h1> 
+<h2>{{var}}</h2> 
+<h2>{{greet}}</h2> 
+<ul>
+    {% for i in myfruits %}
+    <li>{{i}}</li>
+    {% endfor %}
+</ul>
+<ul>
+    {% for i in clzz %}
+    <li>{{i}}</li>
+    {% endfor %}
+</ul>
+{% if ans %}
+<h2>{{num1}} is greater than {{num2}}</h2>
+{% else %}
+<h2>{{num2}} is greater than {{num1}}</h2>
+{% endif %}
+{% endblock %}
+

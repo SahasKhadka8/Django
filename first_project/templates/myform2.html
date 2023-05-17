@@ -1,0 +1,11 @@
+{% extends 'first.html' %}
+{% block title %}Title{% endblock %}
+{% block content %}
+<div class="col-md-6" style="margin: 0 auto;">
+    <form method="get" action="{% url 'submitform2' %}">
+{{form.as_p}}
+<br>
+<center><button type="Submit" class="btn btn-primary">Submit</button></center>
+</form>
+</div>
+{% endblock %}
